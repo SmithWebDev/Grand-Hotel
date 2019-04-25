@@ -60,7 +60,105 @@ body
   font-size: 1.5rem
   color: #555555
 // sidebar
+// navigation
+.navigation
+  margin-left: 8rem
+  position: fixed
+  width: 40rem
+  height: 100%
+  background: linear-gradient(to top, rgba(34,32,41,1), rgba(34,32,41,.8)),url(../img/nav-bg.jpeg) center no-repeat
+  background-size: cover
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  &-heading
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 3.5rem
+    font-weight: 300
+    letter-spacing: 0.2rem
+    color: #deaa86
+    text-align: center
+  &-search
+    position: relative
 
+  &-search-input
+    padding: 1rem 2rem
+    width: 30rem
+    background-color: rgba(0,0,0,.3)
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 1.6rem
+    color: #deaa86
+    letter-spacing: 0.1rem
+    outline: none
+    border: .1rem solid #555555
+    border-radius: 10rem
+    transition: background-color .3s
+    &:focus
+      background-color: rgba(0,0,0,.1)
+  &-search-btn
+    border: none
+    background-color: transparent
+    color: #deaa86
+    font-size: 1.7rem
+    position: absolute
+    top: 1rem
+    right: 1rem
+    cursor: pointer
+    &:focus
+      outline: none
+  &-list
+    list-style: none
+    padding: 0
+    margin: 0
+    height: 28rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+  &-item
+    position: relative
+  &-link 
+    font-size: 1.6em
+    color: #ffffff
+    font-weight: 400 
+    letter-spacing: .1rem
+    text-transform: uppercase
+    text-decoration: none
+    transition: color .5s
+    &::before
+      content: ''
+      width: 0
+      height: 0.1rem
+      background-color: #deaa86
+      position: absolute
+      top: 1rem
+      left: -4rem
+      transition: width .5s cubic-bezier(1,0,0,1)
+    &::after
+      content: ''
+      width: 0
+      height: 0.1rem
+      background-color: #deaa86
+      position: absolute
+      top: 1rem
+      right: -4rem
+      transition: width .5s cubic-bezier(1,0,0,1)
+    &:hover
+      color: #deaa86
+      &::before, &::after
+        width: 3rem
+.copyright
+  color: #ffffff
+  font-size: 1.2rem
+  margin-bottom: 1.5rem
+
+
+
+
+
+
+// end of navigation
 
 
 // end of navbar

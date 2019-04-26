@@ -253,3 +253,103 @@ body {
           transform: rotate(405deg) translate(-5px, -6px);
   width: 2.5rem;
 }
+
+.header {
+  margin-left: 8rem;
+  height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5))), url(../img/header-1.jpeg) center no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/header-1.jpeg) center no-repeat;
+  background-size: cover;
+}
+
+.header .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .hotel-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: #deaa86;
+  letter-spacing: .2rem;
+}
+
+.header .banner {
+  color: #dddddd;
+  height: 65rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .banner-heading {
+  font-family: 'Josephin Sans', sans-serif;
+  font-size: 7rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  -webkit-animation: anim 2s;
+          animation: anim 2s;
+}
+
+.header .banner-paragraph {
+  font-size: 3.5rem;
+  font-weight: 300;
+  -webkit-animation: anim 1.5s .5s backwards;
+          animation: anim 1.5s .5s backwards;
+}
+
+.header .banner-button {
+  width: 21rem;
+  padding: 1.2rem 2rem;
+  font-size: 2rem;
+  color: #333333;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 10rem;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(gold), to(goldenrod));
+  background: linear-gradient(to right, gold, goldenrod);
+  cursor: pointer;
+  -webkit-animation: anim 1s 1s backwards;
+          animation: anim 1s 1s backwards;
+}
+
+.header .banner-button:hover {
+  background: -webkit-gradient(linear, right top, left top, from(gold), to(goldenrod));
+  background: linear-gradient(to left, gold, goldenrod);
+}
+
+.header .banner-button:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+
+@-webkit-keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
